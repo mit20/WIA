@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Unslider Presentation - Marlon Torres</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/styles/sunburst.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+                <!--<section> go here-->
+                
+                <section>
+                <h1>Unslider </h1>
+                <p>Web Interaction & Animation</p>
+                <p>Full Sail University</p>
+                <p>By: Marlon Torres</p>
+                </section>
+               
+                	
+                    <section>
+                    	<h2>What is Unslider?</h2>
+                        <ul>
+                        	<li>It's a JQuery Slider Plugin</li>
+                            <li>Great for Slides</li>
+                            <li>Responsive</li>
+                            <li>Minimal - less than 3kb</li>
+                        </ul>
+                    </section>
+                    
+                   <section>
+                   		<section>
+                    		<h2>Why Unslider?</h2>
+                        </section>
+                    	<section>
+                       		 <ul>
+                        		<li>Easy/simple to use</li>
+                            </ul>
+                         </section>
+                         <section>
+                            <ul>
+                         	   <li>Cross-browser compatible</li>
+                            </ul>
+                           </section>  
+                            <section>
+                            	<ul>
+                            		<li>Responsive</li>
+                            	</ul>
+                            </section>
+                            <section>
+                            	<ul>
+                            		<li>Adjusts for heights</li>
+                        		</ul>
+                        	</section>
+                            
+                            <section>
+                            	<ul>
+                            		<li>Touch/Swipe Plugin for Mobile Devices</li>
+                        		</ul>
+                        	</section>
+                    </section>
+                    
+                    <section>
+        	        	<h2>Unslider</h2>
+                    
+    	    	            <a href="http://unslider.com/" target="_blank"> Go to Unslider</a>
+             
+	                </section>
+                    
+                    
+                    <section>
+                    	<section>
+                        <h2>How do you install or how do you use it?</h2>
+ 						</section>
+                        <section>
+                        <h2>Include JQuery and Unslider</h2>
+                        <h3>Step 1</h3>
+<pre><code>
+&lt;script src="http://code.jquery.com/jquery-latest.min.js"&gt;&lt;/script&gt;
+&lt;script src="http://unslider.com/unslider.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+						</section>
+                        
+                         <section>
+                         <h2>HTML Code</h2>
+                        <h3>Step 2</h3>
+<pre><code>
+&lt;div class="banner"&gt;
+&lt;ul&gt;
+&lt;li&gt;This is a slide.&lt;/li&gt;
+&lt;li&gt;This is another slide.&lt;/li&gt;
+&lt;li&gt;This is a final slide.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+
+						</section>
+                        
+                         <section>
+                         <h2>CSS</h2>
+                        <h3>Step 3</h3>
+<pre><code>
+.banner { position: relative; overflow: auto; }
+    .banner li { list-style: none; }
+        .banner ul li { float: left; }
+</code></pre>
+
+						</section>
+                        
+                         <section>
+                         <h2>Javascript</h2>
+                        <h3>Step 4</h3>
+<pre><code>
+$(function() {
+    $('.banner').unslider();
+});
+</code></pre>
+
+						</section>
+                        
+                    </section>
+                    
+                    <section>
+                    	<h2>Options</h2>
+                    </section>
+                    
+                    <section>
+                    <h2>Customize It</h2>
+                    <pre><code>
+$('.banner').unslider({
+speed: 500,               //  The speed to animate each slide 
+delay: 3000,              //  The delay between slide animations 
+complete: function() {},  //  A function that gets called 
+keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+dots: true,               //  Display dot navigation
+fluid: false              //  Support responsive design. 
+});
+                    
+                    </code></pre>	
+                    </section>
+                 
+                    <section>
+                    <h2>Adding previous/next links</h2>
+                    <pre><code>
+&lt;!-- The HTML --&gt;
+&lt;a href="#" class="unslider-arrow prev"&gt;Previous slide&lt;/a&gt;
+&lt;a href="#" class="unslider-arrow next"&gt;Next slide&lt;/a&gt;
+
+&lt;!-- And the JavaScript --&gt;
+&lt;script&gt;
+    var unslider = $('.banner').unslider();
+    
+    $('.unslider-arrow').click(function() {
+        var fn = this.className.split(' ')[1];
+ //  Either do unslider.data('unslider').next() or .prev() depending on
+ // the className
+
+unslider.data('unslider')[fn]();
+    });
+&lt;/script&gt;
+</code></pre>	
+                    </section>
+                    
+                     <section>
+                   	<h2>Let's check out my example!</h2>
+                    </section>
+                    
+                    
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme || 'simple', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
