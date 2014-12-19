@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta name="description" content="The Official DJ MGG website." />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <!--  
+    	Marlon Torres
+    	Assignment: The Presentation
+        December 17, 2014
+    -->
+
+	<title>
+    	DJMGG.COM | Marlon G. | Gallery
+    </title>
+
+ 	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/unslider.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+
+</head>
+
+<!-- UNSLIDER JQUERY PLUGIN FOR SLIDER -->
+
+        <div class="banner">
+            <ul>
+                <li style="background-image: url('images/banner2.jpg');">
+                    <h1>WELCOME TO DJMGG.COM</h1>
+                        <p>I am your DJ!</p>
+                </li>
+                        
+                <li style="background-image: url('images/banner1.jpg');">
+                    <h1>ABOUT ME</h1>
+                        <p>Get to know me.</p>
+                </li>
+                
+                <li style="background-image: url('images/banner3.jpg');">
+                    <h1>MIXES</h1>
+                        <p>Check out some of my mixes.</p>
+                </li>
+                
+                <li style="background-image: url('images/banner4.jpg');">
+                    <h1>CONTACT</h1>
+                        <p>Hire me! I'm your DJ!</p>
+                </li>
+                
+            </ul>
+             
+        </div>
+<!-- END OF SLIDER -->
+
+
+<header>
+    	<!-- navigation list - moves you within page to these headers. -->
+    <nav>
+      <ul>
+        <li><a href="index.html">|&nbsp; HOME &nbsp;| </a></li>
+        <li><a href="about.html">|&nbsp; ABOUT &nbsp;|</a></li>
+        <li><a href="mixes.html">|&nbsp; MIXES &nbsp;|</a></li>
+        <li><a href="gallery.html">|&nbsp; GALLERY &nbsp;|</a></li>
+		<li><a href="contact.html">|&nbsp; CONTACT &nbsp;|</a></li>
+      </ul>
+    </nav>  
+    
+</header>  <!-- END OF HEADER --> 
+
+
+
+<div class="container">
+
+<article id="gallery">
+
+	<h1 id="gal">DJ MGG Gallery</h1>
+    
+    
+    <!-- Row 1 -->
+    <div>
+        <a class="column1of4" href="images/dj1.jpg" data-lightbox="group1" title="Marlon with Rabanes">
+       		<img src="images/small_dj1.jpg" alt="Marlon and Rabanes">
+       	</a>
+        
+        <a class="column2of4" href="images/dj2.jpg" data-lightbox="group1" title="Marlon with Michael Stuart">
+       		<img src="images/small_dj2.jpg" alt="Marlon with Michael Stuart">
+       	</a>
+        
+        <a class="column3of4" href="images/dj3.jpg" data-lightbox="group1" title="Marlon with El General">
+       		<img src="images/small_dj3.jpg" alt="Marlon with El General">
+       	</a>
+        
+        <a class="column4of4" href="images/dj4.jpg" data-lightbox="group1" title="Marlon with Holyfield">
+       		<img src="images/small_dj4.jpg" alt="Marlon with Holyfield">
+       	</a>
+   </div> 
+      
+   <!-- Row 2 -->
+    <div>
+        <a class="column1of4" href="images/dj5.jpg" data-lightbox="group1" title="Marlon with Nando">
+       		<img src="images/small_dj5.jpg" alt="Marlon with Nando">
+       	</a>
+        
+        <a class="column2of4" href="images/dj6.jpg" data-lightbox="group1" title="Marlon with Nando">
+       		<img src="images/small_dj6.jpg" alt="Marlon with Nando">
+       	</a>
+        
+        <a class="column3of4" href="images/dj7.jpg" data-lightbox="group1" title="Marlon with DJ Flex">
+       		<img src="images/small_dj7.jpg" alt="Marlon with DJ Flex">
+       	</a>
+        
+        <a class="column4of4" href="images/dj8.jpg" data-lightbox="group1" title="Marlon with DJ Greg">
+       		<img src="images/small_dj8.jpg" alt="Marlon with DJ Greg">
+       	</a>
+   </div>  
+   
+   <!-- Row 3 -->
+    <div>
+        <a class="column1of4" href="images/dj9.jpg" data-lightbox="group1" title="Marlon at Latin Music Fest">
+       		<img src="images/small_dj9.jpg" alt="Marlon at Latin Music Fest">
+       	</a>
+        
+        <a class="column2of4" href="images/dj10.jpg" data-lightbox="group1" title="Marlon with Renato">
+       		<img src="images/small_dj10.jpg" alt="Marlon with Renato">
+       	</a>
+        
+        <a class="column3of4" href="images/dj11.jpg" data-lightbox="group1" title="Marlon with Rolo">
+       		<img src="images/small_dj11.jpg" alt="Marlon with Rolo">
+       	</a>
+        
+        <a class="column4of4" href="images/dj12.jpg" data-lightbox="group1" title="Marlon with Sandra">
+       		<img src="images/small_dj12.jpg" alt="Marlon with Sandra">
+       	</a>
+   </div>   
+   
+</article>
+      
+<!-- end .container --></div>
+
+<footer>
+      
+      <p>© 2014 DJMGG.com All Rights Reserved.<br />
+      Site Design & Developed by Marlon Torres  <a href="mailto:marlonitorres@gmail.com">Marlon I.Torres</a></p>
+</footer> <!-- END OF FOOTER -->
+
+<!-- Javascript -->    
+<script>
+        $('.banner').unslider({
+        speed: 400,               //  The speed to animate each slide (in milliseconds)
+        delay: 7000,              //  The delay between slide animations (in milliseconds)
+        keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+        dots: true,               //  Display dot navigation
+        fluid: true              //  Support responsive design. May break non-responsive designs
+        });
+
+
+</script>
+
+
+
+
+</body>
+
+
+</html>

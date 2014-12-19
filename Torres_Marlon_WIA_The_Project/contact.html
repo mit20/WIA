@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta name="description" content="The Official DJ MGG website." />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <!--  
+    	Marlon Torres
+    	Assignment: The Presentation
+        December 17, 2014
+    -->
+
+	<title>DJMGG.COM | Marlon G. | Contact</title>
+ 
+ 	<link rel="stylesheet" type="text/css" href="css/main.css">
+    
+    <script src="js/modernizr.custom.32968.js"></script>
+    
+</head>
+
+<!-- UNSLIDER JQUERY PLUGIN FOR SLIDER -->   
+
+        <div class="banner">
+            <ul>
+                <li style="background-image: url('images/banner2.jpg');">
+                    <h1>WELCOME TO DJMGG.COM</h1>
+                        <p>I am your DJ!</p>
+                </li>
+                        
+                <li style="background-image: url('images/banner1.jpg');">
+                    <h1>ABOUT ME</h1>
+                        <p>Get to know me.</p>
+                </li>
+                
+                <li style="background-image: url('images/banner3.jpg');">
+                    <h1>MIXES</h1>
+                        <p>Check out some of my mixes.</p>
+                </li>        
+                
+                <li style="background-image: url('images/banner4.jpg');">
+                    <h1>CONTACT</h1>
+                        <p>Hire me! I'm your DJ!</p>
+                </li>
+                
+            </ul>
+             
+        </div>
+<!-- END OF SLIDER -->
+
+
+<header>
+    	<!-- navigation list - moves you within page to these headers. -->
+    <nav>
+      <ul>
+        <li><a href="index.html">|&nbsp; HOME &nbsp;| </a></li>
+        <li><a href="about.html">|&nbsp; ABOUT &nbsp;|</a></li>
+        <li><a href="mixes.html">|&nbsp; MIXES &nbsp;|</a></li>
+        <li><a href="gallery.html">|&nbsp; GALLERY &nbsp;|</a></li>
+		<li><a href="contact.html">|&nbsp; CONTACT &nbsp;|</a></li>
+      </ul>
+    </nav>  
+    
+</header>  <!-- END OF HEADER --> 
+
+
+
+<div class="container">
+
+
+
+
+    
+<div class="content">
+
+	<!-- CANVAS -->	
+	<canvas id="contact_canvas" width="620" height="100">
+    	Contact Me!
+    </canvas>
+    <!-- END OF CANVAS -->
+
+<br>
+<br>
+
+
+<!-- CONTACT FORM -->
+
+    <form action="">
+        <div>
+            <label for="name">Name:</label> <input id="name" type="text" required  name="username" size="45" maxlength="40"/>
+        </div>
+
+        <div>
+            <label for="email">Email:</label> <input id="email" type="email" required name="email" size="45" maxlength="40"/>
+        </div>
+        
+        
+		<div>
+            <label for="date">Tentative Date:</label> <input id="date" type="date" required name="date" size="45" maxlength="40"/>
+        </div>
+        
+        <div>
+            <label for="commentbox">Message:</label>
+            <textarea id="commentbox" name="comments" placeholder="Enter your message here." cols="55" rows="10" ></textarea>
+        </div>
+
+        <div>
+            <input type="submit" name="submit" value="Submit" id="submit" />
+        </div>
+
+    </form>
+
+
+</div><!-- END OF .CONTENT -->
+
+
+<aside>
+<!-- Contact info -->
+<dl>
+      <dt>Email</dt>
+      <dd><a href="mailto:mgg@email.com" title="Click to send me an email">mgg@email.com</a></dd>
+      
+      <dt>Telephone</dt>
+      <dd><a href="tel:4045559496" title="Click to call us">(404) 555-9496</a></dd>
+      
+      <dt>Address</dt>
+      <dd>
+        <address>
+          1234 Falcon Way<br />
+          Atlanta<r />
+          Georgia<br />
+          30339<br />
+          USA<br />
+        </address>
+      </dd>
+</dl>
+
+<!-- USED AN IMAGE HERE FOR A FB PLUGIN SINCE MY CLIENT DOES NOT HAVE ONE YET -->
+ <img src="images/fb_plugin.png" alt="Facebook Plugin" class="align-center" />   
+
+</aside><!-- END OF SIDEBAR -->
+      
+<!-- end .container --></div>
+
+<footer>
+      
+      <p>© 2014 DJMGG.com All Rights Reserved.<br />
+      Site Design & Developed by Marlon Torres  <a href="mailto:marlonitorres@gmail.com">Marlon I.Torres</a></p>
+</footer> <!-- END OF FOOTER -->
+
+
+
+<!-- SCRIPTS -->
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/unslider.min.js"></script>
+<script src="js/mycanvas.js"></script>
+  
+<script>
+        $('.banner').unslider({
+        speed: 400,               //  The speed to animate each slide (in milliseconds)
+        delay: 7000,              //  The delay between slide animations (in milliseconds)
+        keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+        dots: true,               //  Display dot navigation
+        fluid: true              //  Support responsive design. May break non-responsive designs
+        });
+
+
+</script>
+
+
+
+
+</body>
+
+
+</html>

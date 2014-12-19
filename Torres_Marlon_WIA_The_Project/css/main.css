@@ -1,0 +1,354 @@
+body {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #FFFFFF;
+}
+
+nav{
+	float: left;
+	position: relative;
+	width: 100%;
+	display: block;
+	cursor: pointer;
+	background-color: #000;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none;
+	font: normal normal 16px Arial, Verdana, sans-serif;
+}
+
+nav li {
+	list-style: none;
+	cursor: pointer;
+	width: 192px;
+	display: inline-block;
+}
+
+.banner { 
+    position: relative; 
+    width: 100% !important; 
+    overflow: auto; 
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 3px #111;
+}
+
+.banner h1 {
+    color: #fff;
+    font: bold 42px/1.4 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    margin-top: 120px;
+    padding-top: 10px;
+    text-align: center;
+
+}
+
+.banner p {
+    font: normal normal 36px Arial, Verdana, sans-serif;
+	color: #fff;
+    
+}
+
+.banner ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner li {    
+    margin: 0px; 
+    padding: 0px;        
+    list-style: none; 
+    background-repeat: no-repeat; 
+}
+
+.banner ul li { 
+    display: block;
+    float:left;
+    padding: 0px;
+    margin: 0px;
+    min-height: 375px;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    -ms-background-size: 100% auto;
+    background-size: 100% auto;
+    box-shadow: inset 0 -3px 6px rgba(0,0,0,.1);
+}
+
+.banner .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+}
+
+.banner .dots li {
+    display: inline-block;
+    width: 15px;
+	height: 15px;
+    margin: 0 4px;
+    text-indent: -999em;
+    border: 2px solid #fff;
+	border-radius: 6px;
+    cursor: pointer;
+    opacity: .8;
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}
+	
+.banner .dots li.active {
+    background: #fff;
+    opacity: 1;
+}
+
+
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto; 
+}
+
+.content {
+	width: 620px;
+	background-color: #FFF;
+	float: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+audio {
+	padding: 0 0 40px 60px;
+	}
+
+
+img.align-center {
+	display: block;
+	max-width: 100%;
+	margin: 0px auto;
+}
+
+aside {
+	background-color: #FFF;
+	float: right;
+	width: 300px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 1.4em;
+	font-weight: normal;
+	font-variant: normal;
+	color: #000;
+	padding: 10px
+}
+
+article#gallery {
+	overflow: auto;
+	width: 960px;
+	background-color:#fff;
+	padding-bottom: 60px;
+}
+
+a.column1of4 {
+    float: left;
+    margin: 0 0 0 30px;
+}
+a.column2of4 {
+    float: left;
+    margin: 0 0 0 30px;
+}
+
+a.column3of4 {
+    float: left;
+    margin: 0 0 0 30px;
+}
+
+a.column4of4 {
+    float: left;
+   margin: 0 0 0 30px;
+}
+
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	color: #e41f22;
+	padding: 15px;
+} 
+
+h1#gal {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	color: #e41f22;
+	padding: 15px;
+	text-align:center;
+}
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+	color: #00F;
+}
+
+
+ol li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding-right: 15px;
+	padding-left: 15px;
+	color: #333;
+	
+}
+
+a img { 
+	border: none;
+}
+
+/*-- Link Styling --*/
+
+a:link {
+	color: #e41f22;
+	text-decoration: none;
+}
+
+a:hover {
+    color: #57e36a;
+}
+
+a:visited {
+	color: #f1da36;
+	text-decoration: none;
+}
+
+/*-- FOOTER STYLES --*/
+footer {
+	position: relative;
+	background-color: #000;
+	width: 100%;
+	height: 150px;
+	clear: both;
+}
+
+footer p {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-variant: small-caps;
+	color: #FFF;
+	padding-top: 50px;
+}
+
+/*-- FORM STYLES -- */
+
+label {
+	width: 200px;
+	text-align: right;
+	float: left;
+	padding-right: 10px;
+}
+
+input {
+		margin-bottom: 10px;
+}
+
+
+input#name {
+	background-color: #e1e1e1;	
+}
+
+input#email {
+	background-color: #e1e1e1;
+}
+
+input#date {
+	background-color: #e1e1e1;
+}
+
+input#submit {
+	font-size: 14px;
+	color: #fff;
+	background-color: #e41f22;
+	width: 150px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 370px;
+	border: 1px solid #333;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+input#submit:hover {
+	background-color: #01137f;	
+}
+
+
+textarea#commentbox {
+	background-color: #e1e1e1;
+	width: 300px;
+	height: 250px;
+	padding-bottom: 5px;
+}
+
+figcaption {
+	font: bold small-caps 12px Arial, Helvetica, sans-serif;
+	text-align: center;
+
+}
+
+dl {
+	background-color: #e1e1e1;
+	padding: 20px;
+}
+
+dt{
+	color: #d44e0e;
+	font: bold small-caps 16px Arial, Helvetica, sans-serif; 
+}
+
+dd{
+	color: #333;
+	font: normal normal 12px/2.5em Arial, Helvetica, sans-serif; 
+}
+
+dl a:link {
+	color: #333;
+	text-decoration: none;
+}
+
+dl a:hover {
+    color: #57e36a;
+}
+
+dl a:visited {
+	color: #f1da36;
+	text-decoration: none;
+}
+
+/*-- CANVAS STYLE --*/
+
+#contact_canvas {
+	border: none;
+	background-color: #000;
+	margin-top: 10px;
+}

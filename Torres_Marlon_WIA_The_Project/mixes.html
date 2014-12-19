@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta name="description" content="The Official DJ MGG website." />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <!--  
+    	Marlon Torres
+    	Assignment: The Presentation
+        December 17, 2014
+    -->
+
+	<title>
+    	DJMGG.COM | Marlon G. | Mixes
+    </title>
+
+ 	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/unslider.min.js"></script>
+    <script src="js/modernizr.custom.32968.js"></script>
+
+</head>
+
+<!-- UNSLIDER JQUERY PLUGIN FOR SLIDER -->
+
+        <div class="banner">
+            <ul>
+                <li style="background-image: url('images/banner2.jpg');">
+                    <h1>WELCOME TO DJMGG.COM</h1>
+                        <p>I am your DJ!</p>
+                </li>
+                        
+                <li style="background-image: url('images/banner1.jpg');">
+                    <h1>ABOUT ME</h1>
+                        <p>Get to know me.</p>
+                </li>
+                
+                <li style="background-image: url('images/banner3.jpg');">
+                    <h1>MIXES</h1>
+                        <p>Check out some of my mixes.</p>
+                </li>
+                
+                <li style="background-image: url('images/banner4.jpg');">
+                    <h1>CONTACT</h1>
+                        <p>Hire me! I'm your DJ!</p>
+                </li>
+                
+            </ul>
+             
+        </div>
+<!-- END OF SLIDER -->
+
+
+<header>
+    	<!-- navigation list - moves you within page to these headers. -->
+    <nav>
+      <ul>
+        <li><a href="index.html">&nbsp; HOME &nbsp;g</a></li>
+        <li><a href="about.html">&nbsp; ABOUT &nbsp;</a></li>
+        <li><a href="mixes.html">&nbsp; MIXES &nbsp;</a></li>
+        <li><a href="gallery.html">&nbsp; GALLERY &nbsp;</a></li>
+		<li><a href="contact.html">&nbsp; CONTACT &nbsp;</a></li>
+      </ul>
+    </nav>  
+    
+</header>  <!-- END OF HEADER --> 
+
+
+
+<div class="container">
+  <div class="content">
+<h1>Various Mixes</h1>
+
+<p>Click on the play button to listen.</p>
+
+<h2>Mix 1</h2>
+    
+    <audio id="audio" controls>
+    	<source src="audio/mix1.mp3" type="audio/mpeg" />
+        <source src="audio/mix1.ogg" type="audio/ogg" />
+        Audio is not supported.
+    </audio>
+    
+<h2>Mix 2</h2>
+
+ 	<audio id="audio" controls>
+    	<source src="audio/mix2.mp3" type="audio/mpeg" />
+        <source src="audio/mix2.ogg" type="audio/ogg" />
+         Audio is not supported.
+    </audio>
+<h2>Mix 3</h2>    
+    <audio id="audio" controls>
+    	<source src="audio/mix1.mp3" type="audio/mpeg" />
+        <source src="audio/mix1.ogg" type="audio/ogg" />
+        Audio is not supported.
+    </audio>
+
+<h2>Mix 4</h2>
+ 	<audio id="audio" controls>
+    	<source src="audio/mix2.mp3" type="audio/mpeg" />
+        <source src="audio/mix2.ogg" type="audio/ogg" />
+         Audio is not supported.
+    </audio>
+ <h2>Mix 5</h2>   
+    <audio id="audio" controls>
+    	<source src="audio/mix1.mp3" type="audio/mpeg" />
+        <source src="audio/mix1.ogg" type="audio/ogg" />
+        Audio is not supported.
+    </audio>
+
+<h2>Mix 6</h2>
+ 	<audio id="audio" controls>
+    	<source src="audio/mix2.mp3" type="audio/mpeg" />
+        <source src="audio/mix2.ogg" type="audio/ogg" />
+         Audio is not supported.
+    </audio>
+
+</div><!-- END OF .CONTENT -->
+
+
+<aside>
+ <img src="images/fb_plugin.png" alt="Facebook Plugin" class="align-center" />   
+
+</aside><!-- END OF SIDEBAR -->
+      
+<!-- end .container --></div>
+
+<footer>
+      
+      <p>© 2014 DJMGG.com All Rights Reserved.<br />
+      Site Design & Developed by Marlon Torres  <a href="mailto:marlonitorres@gmail.com">Marlon I.Torres</a></p>
+</footer> <!-- END OF FOOTER -->
+
+<!-- SCRIPT FOR UNSLIDER PLUGIN -->    
+<script>
+        $('.banner').unslider({
+        speed: 400,               //  The speed to animate each slide (in milliseconds)
+        delay: 7000,              //  The delay between slide animations (in milliseconds)
+        keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+        dots: true,               //  Display dot navigation
+        fluid: true              //  Support responsive design. May break non-responsive designs
+        });
+
+
+</script>
+
+
+<!-- SCRIPT FOR AUDIO -->
+<script>
+
+var audio
+
+window.onload = function(){
+	audio=document.getElementById("audio");
+	
+}
+
+function clicked(){
+	
+	audio.currentTime += 3;
+	
+}
+
+
+
+</script>
+
+
+</body>
+
+
+</html>
